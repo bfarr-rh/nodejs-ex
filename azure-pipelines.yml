@@ -32,7 +32,7 @@ steps:
   inputs:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'AGAPOC'
-    cmd: 'rsync signals2-2-6wvh9:/opt/app/src/junit.xml .'
+    cmd: 'rsync signals2-2-6wvh9:/opt/app-root/src/junit.xml .'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
