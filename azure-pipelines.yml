@@ -27,4 +27,4 @@ steps:
   inputs:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'AGAPOC'
-    cmd: 'exec $(oc get pods -l \'app=signals2\' --no-headers | awk \'{print $1}\') pytest'
+    cmd: 'exec $(oc get pods -l app=signals2 --no-headers | awk '{print $1}') pytest'
